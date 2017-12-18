@@ -12,6 +12,8 @@
 		87B8047E1FE724CD0039CEF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B8047D1FE724CD0039CEF4 /* AppDelegate.swift */; };
 		87B804831FE724CD0039CEF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87B804811FE724CD0039CEF4 /* Main.storyboard */; };
 		87B804851FE724CD0039CEF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87B804841FE724CD0039CEF4 /* Assets.xcassets */; };
+		989C225F1FE82A9200989C8F /* OBNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989C225E1FE82A9200989C8F /* OBNetworkManager.swift */; };
+		989C22611FE8352500989C8F /* OBSearchImageEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989C22601FE8352500989C8F /* OBSearchImageEntity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		87B804821FE724CD0039CEF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		87B804841FE724CD0039CEF4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		87B804861FE724CD0039CEF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		989C225E1FE82A9200989C8F /* OBNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OBNetworkManager.swift; sourceTree = "<group>"; };
+		989C22601FE8352500989C8F /* OBSearchImageEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OBSearchImageEntity.swift; sourceTree = "<group>"; };
 		E21564CD77B0F46943388D3B /* Pods_tvOSFlickr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tvOSFlickr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -75,6 +79,7 @@
 		87B8047C1FE724CD0039CEF4 /* tvOSFlickr */ = {
 			isa = PBXGroup;
 			children = (
+				989C225D1FE829C400989C8F /* Network */,
 				87AAAFEE1FE741C500DB8036 /* Screens */,
 				87B8047D1FE724CD0039CEF4 /* AppDelegate.swift */,
 				87B804811FE724CD0039CEF4 /* Main.storyboard */,
@@ -82,6 +87,15 @@
 				87B804861FE724CD0039CEF4 /* Info.plist */,
 			);
 			path = tvOSFlickr;
+			sourceTree = "<group>";
+		};
+		989C225D1FE829C400989C8F /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				989C225E1FE82A9200989C8F /* OBNetworkManager.swift */,
+				989C22601FE8352500989C8F /* OBSearchImageEntity.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 		DB6A4EE647C1617D9A04BEB5 /* Pods */ = {
@@ -225,7 +239,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				87B8047E1FE724CD0039CEF4 /* AppDelegate.swift in Sources */,
+				989C225F1FE82A9200989C8F /* OBNetworkManager.swift in Sources */,
 				87AAAFF01FE7421200DB8036 /* OBSearchViewController.swift in Sources */,
+				989C22611FE8352500989C8F /* OBSearchImageEntity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
