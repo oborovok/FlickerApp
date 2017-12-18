@@ -1,0 +1,9 @@
+# Uncomment the next line to define a global platform for your project
+platform :tvos, '10.0'
+
+target 'tvOSFlickr' do
+  use_frameworks!
+
+  pod 'AlamofireImage', '~> 3.3'
+
+end
