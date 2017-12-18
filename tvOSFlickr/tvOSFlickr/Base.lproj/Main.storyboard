@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Search View Controller-->
         <scene sceneID="Eba-Bo-c2a">
             <objects>
-                <viewController id="J0L-mJ-1kp" sceneMemberID="viewController">
+                <viewController id="J0L-mJ-1kp" customClass="OBSearchViewController" customModule="tvOSFlickr" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="HO3-tJ-9xb"/>
                         <viewControllerLayoutGuide type="bottom" id="KIc-Zw-ePa"/>
@@ -41,6 +41,9 @@
                                         <rect key="frame" x="172" y="206" width="200" height="86"/>
                                         <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                         <state key="normal" title="Search"/>
+                                        <connections>
+                                            <action selector="searchAction:" destination="J0L-mJ-1kp" eventType="primaryActionTriggered" id="lA7-dd-FR2"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -64,6 +67,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="f91-jZ-zbL"/>
                     </view>
+                    <connections>
+                        <outlet property="searchButton" destination="zem-Ba-Gcc" id="2jo-Ze-x1r"/>
+                        <outlet property="searchTextField" destination="P29-3G-IKi" id="EcO-Qc-lAP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fzc-Td-K3b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
