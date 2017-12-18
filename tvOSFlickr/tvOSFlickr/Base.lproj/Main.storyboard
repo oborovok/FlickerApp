@@ -41,6 +41,9 @@
                                         <rect key="frame" x="172" y="206" width="200" height="86"/>
                                         <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                         <state key="normal" title="Search"/>
+                                        <connections>
+                                            <action selector="searchAction:" destination="J0L-mJ-1kp" eventType="primaryActionTriggered" id="lA7-dd-FR2"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
