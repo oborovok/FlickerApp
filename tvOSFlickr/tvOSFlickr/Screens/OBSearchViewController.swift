@@ -13,9 +13,18 @@ class OBSearchViewController: UIViewController {
     @IBOutlet weak var searchTextField: UITextField!
     @IBOutlet weak var searchButton: UIButton!
     
+    var searchResult = [Any]()
+    
+    
     // MARK: - Action
     @IBAction func searchAction(_ sender: Any) {
-        
+        if let searchText = searchTextField.text {
+            OBNetworkManager.searchImage(searchText) { (response, error) in
+                if error != nil {
+                    return
+                }
+            }
+        }
     }
 }
 

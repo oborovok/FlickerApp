@@ -7,19 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		75F915EEEE2E500D741A389F /* Pods_tvOSFlickr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E21564CD77B0F46943388D3B /* Pods_tvOSFlickr.framework */; };
 		87AAAFF01FE7421200DB8036 /* OBSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87AAAFEF1FE7421200DB8036 /* OBSearchViewController.swift */; };
 		87B8047E1FE724CD0039CEF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B8047D1FE724CD0039CEF4 /* AppDelegate.swift */; };
 		87B804831FE724CD0039CEF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87B804811FE724CD0039CEF4 /* Main.storyboard */; };
 		87B804851FE724CD0039CEF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87B804841FE724CD0039CEF4 /* Assets.xcassets */; };
+		989C225F1FE82A9200989C8F /* OBNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989C225E1FE82A9200989C8F /* OBNetworkManager.swift */; };
+		989C22611FE8352500989C8F /* OBSearchImageEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989C22601FE8352500989C8F /* OBSearchImageEntity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2CE4B6E4A7E45BDA2F25F599 /* Pods-tvOSFlickr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tvOSFlickr.release.xcconfig"; path = "Pods/Target Support Files/Pods-tvOSFlickr/Pods-tvOSFlickr.release.xcconfig"; sourceTree = "<group>"; };
+		65FC2AB967321C64737FCB8C /* Pods-tvOSFlickr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tvOSFlickr.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tvOSFlickr/Pods-tvOSFlickr.debug.xcconfig"; sourceTree = "<group>"; };
 		87AAAFEF1FE7421200DB8036 /* OBSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OBSearchViewController.swift; sourceTree = "<group>"; };
 		87B8047A1FE724CD0039CEF4 /* tvOSFlickr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tvOSFlickr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87B8047D1FE724CD0039CEF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		87B804821FE724CD0039CEF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		87B804841FE724CD0039CEF4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		87B804861FE724CD0039CEF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		989C225E1FE82A9200989C8F /* OBNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OBNetworkManager.swift; sourceTree = "<group>"; };
+		989C22601FE8352500989C8F /* OBSearchImageEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OBSearchImageEntity.swift; sourceTree = "<group>"; };
+		E21564CD77B0F46943388D3B /* Pods_tvOSFlickr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tvOSFlickr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,12 +35,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75F915EEEE2E500D741A389F /* Pods_tvOSFlickr.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5B5D6F5E4077D9C1525C96A8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E21564CD77B0F46943388D3B /* Pods_tvOSFlickr.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		87AAAFEE1FE741C500DB8036 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
@@ -46,6 +63,8 @@
 			children = (
 				87B8047C1FE724CD0039CEF4 /* tvOSFlickr */,
 				87B8047B1FE724CD0039CEF4 /* Products */,
+				DB6A4EE647C1617D9A04BEB5 /* Pods */,
+				5B5D6F5E4077D9C1525C96A8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +79,7 @@
 		87B8047C1FE724CD0039CEF4 /* tvOSFlickr */ = {
 			isa = PBXGroup;
 			children = (
+				989C225D1FE829C400989C8F /* Network */,
 				87AAAFEE1FE741C500DB8036 /* Screens */,
 				87B8047D1FE724CD0039CEF4 /* AppDelegate.swift */,
 				87B804811FE724CD0039CEF4 /* Main.storyboard */,
@@ -69,6 +89,24 @@
 			path = tvOSFlickr;
 			sourceTree = "<group>";
 		};
+		989C225D1FE829C400989C8F /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				989C225E1FE82A9200989C8F /* OBNetworkManager.swift */,
+				989C22601FE8352500989C8F /* OBSearchImageEntity.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		DB6A4EE647C1617D9A04BEB5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				65FC2AB967321C64737FCB8C /* Pods-tvOSFlickr.debug.xcconfig */,
+				2CE4B6E4A7E45BDA2F25F599 /* Pods-tvOSFlickr.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -76,9 +114,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 87B804891FE724CD0039CEF4 /* Build configuration list for PBXNativeTarget "tvOSFlickr" */;
 			buildPhases = (
+				4B7C434F0F37D6B676F0DBCA /* [CP] Check Pods Manifest.lock */,
 				87B804761FE724CD0039CEF4 /* Sources */,
 				87B804771FE724CD0039CEF4 /* Frameworks */,
 				87B804781FE724CD0039CEF4 /* Resources */,
+				27AC7681DF1B32482A522FAD /* [CP] Embed Pods Frameworks */,
+				5A25B9AEF245BA2349604F82 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -136,13 +177,71 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		27AC7681DF1B32482A522FAD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-tvOSFlickr/Pods-tvOSFlickr-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-tvOSFlickr/Pods-tvOSFlickr-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4B7C434F0F37D6B676F0DBCA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-tvOSFlickr-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5A25B9AEF245BA2349604F82 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-tvOSFlickr/Pods-tvOSFlickr-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		87B804761FE724CD0039CEF4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				87B8047E1FE724CD0039CEF4 /* AppDelegate.swift in Sources */,
+				989C225F1FE82A9200989C8F /* OBNetworkManager.swift in Sources */,
 				87AAAFF01FE7421200DB8036 /* OBSearchViewController.swift in Sources */,
+				989C22611FE8352500989C8F /* OBSearchImageEntity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,33 +366,41 @@
 		};
 		87B8048A1FE724CD0039CEF4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65FC2AB967321C64737FCB8C /* Pods-tvOSFlickr.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6JA6GV2MDS;
 				INFOPLIST_FILE = tvOSFlickr/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.borovok.flickr.tvOSFlickr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
 			};
 			name = Debug;
 		};
 		87B8048B1FE724CD0039CEF4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2CE4B6E4A7E45BDA2F25F599 /* Pods-tvOSFlickr.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6JA6GV2MDS;
 				INFOPLIST_FILE = tvOSFlickr/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.borovok.flickr.tvOSFlickr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
 			};
 			name = Release;
 		};
