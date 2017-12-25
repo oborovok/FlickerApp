@@ -50,4 +50,17 @@ class OBNetworkManager: NSObject {
             }
         }
     }
+    
+    class func createImageURL(fromEntity entity: OBPhotoEntity, imageSize: OBImageSize) -> URL? {
+        let urlString = "https://farm\(entity.farm).staticflickr.com/\(entity.server)/\(entity.id)_\(entity.secret)_\(imageSize).jpg"
+        
+        return URL(string: urlString)
+    }
+    
+    class func createImageURLRequestFromJSON(fromEntity entity: OBPhotoEntity, imageSize: OBImageSize) -> URLRequest {
+        var request = URLRequest(url: OBNetworkManager.createImageURL(fromEntity: entity, imageSize: imageSize)!)
+        request.addValue("image/*", forHTTPHeaderField: "Accept")
+        
+        return request
+    }
 }
