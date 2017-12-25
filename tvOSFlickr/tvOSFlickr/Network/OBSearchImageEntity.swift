@@ -41,7 +41,7 @@ struct OBPhotosEntity: Codable {
     let pages: Int
     let perpage: Int
     let photo: [OBPhotoEntity]
-    let total: Int
+    let total: String
     
 }
 
@@ -61,13 +61,13 @@ struct OBPhotoEntity: Codable {
     }
     
     let farm: Int
-    let photoId: Int
-    let isFamily: Bool
-    let isFriend: Bool
-    let isPublic: Bool
+    let id: String
+    let isfamily: Int
+    let isfriend: Int
+    let ispublic: Int
     let owner: String
     let secret: String
-    let server: Int
+    let server: String
     let title: String
     
 }
